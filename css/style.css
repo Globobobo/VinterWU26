@@ -1,9 +1,96 @@
 /* index */
 
+body{
+	background-color: black;
+	margin:0;
+}
+
+
 #index-container{
 	display: grid;
+	height: 300vh;	
+	grid-template-columns: 7.5% 85% 7.5%;
+	grid-template-rows: 7.5% 5% 82.5% 5%;
+	grid-template-areas: 
+	"hd hd hd"
+	"n1 nv n2"
+	"mn mn mn"
+	"ft ft ft";
 
+	padding-left: 7rem;
+	padding-right: 7rem;
 
+}
 
+header.index{
+	grid-area:hd;
+	background-color: #5E1318;
+  	font-family: "Kelly Slab", sans-serif;
+  	font-weight: 600;
+ 	font-style: normal;
+ 	font-size: 3rem;
+ 	display: flex;
+ 	justify-content: space-around;
+  	color: white;
+  	align-items: center;
+  	border-bottom: 0.6rem solid #360B0E;
+  	box-shadow: 0rem 0.5rem 1rem 0.4rem #360B0E;
+	position: relative;
+    z-index: 2;
+    box-sizing:border-box;
+
+}
+
+nav.nav_1.index{
+	grid-area: n1;
+	background-color: #EFD3D5;
+	box-sizing:border-box;
+}
+
+nav.nav_main.index{
+	grid-area: nv;
+	background-color: #D32B37;
+	border-bottom: 0.6rem solid #5E1318;
+	box-shadow: 0rem 0.5rem 1rem 0.4rem #360B0E;
+	position: relative;
+    z-index: 1;
+    box-sizing:border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  	font-family: "Titan One", sans-serif;
+ 	font-weight: 400;
+  	font-style: normal;
+}
+
+nav a{
+	color: white;
+	text-decoration: none;
+	font-size: 2rem;
+	text-shadow: 0rem 0.3rem 0.5rem#360B0E;
+
+}
+
+nav div.navbox{
+	background-color: #5E1318;
+
+}
+
+nav.nav_2.index{
+	grid-area: n2;
+	background-color: #EFD3D5;
+	box-sizing:border-box;
+}
+
+main.index{
+	grid-area: mn;
+	background-color: #EFD3D5;
+	box-sizing:border-box;
+}
+
+footer.index{
+	grid-area: ft;
+	background-color: #5E1318;
+	box-sizing:border-box;
 }
 
